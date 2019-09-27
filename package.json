@@ -1,0 +1,9 @@
+{
+  "name": "p2schemaissue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "prisma2": "2.0.0-alpha.219"
+  }
+}

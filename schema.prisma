@@ -1,0 +1,19 @@
+datasource db {
+  provider = "mysql"
+  url      = "mysql://root:root@127.0.0.1:3306/p2_schema_issue"
+}
+
+model User {
+  id        String  @default(cuid()) @id
+//  someField String?
+}
+
+model UserProfile {
+  id            String  @default(cuid()) @id
+  user          User
+}
+
+model SomeEntity1 {
+  id            String  @default(cuid()) @id
+  user          User
+}
